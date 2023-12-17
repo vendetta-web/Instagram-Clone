@@ -5,6 +5,7 @@ import { Link as RouterLink } from "react-router-dom";
 import { BiLogOut } from "react-icons/bi";
 import useLogout from "../../hooks/useLogout";
 import SidebarItems from "./SidebarItems";
+const currentYear = new Date().getFullYear();
 
 const Sidebar = () => {
   const { handleLogout, isLoggingOut } = useLogout();
@@ -78,6 +79,17 @@ const Sidebar = () => {
             </Button>
           </Flex>
         </Tooltip>
+        <Flex fontSize={12} color={"gray.500"} mt={5} alignSelf={"start"}>
+          © {currentYear} Built By{" "}
+          <Link
+            href="https://saurabhdixit.vercel.app"
+            target="_blank"
+            color="blue.500"
+            fontSize={14}
+          >
+            Vendetta-Web
+          </Link>
+        </Flex>
       </Flex>
     </Box>
   );
