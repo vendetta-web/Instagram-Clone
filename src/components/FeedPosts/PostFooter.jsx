@@ -2,9 +2,6 @@ import { Box, Button, Flex, Input, InputGroup, InputRightElement, Text, useDiscl
 import { useRef, useState } from "react";
 import { FaMessage } from "react-icons/fa6";
 import { AiTwotoneDislike, AiTwotoneLike } from "react-icons/ai";
-
-
-
 import usePostComment from "../../hooks/usePostComment";
 import useAuthStore from "../../store/authStore";
 import useLikePost from "../../hooks/useLikePost";
